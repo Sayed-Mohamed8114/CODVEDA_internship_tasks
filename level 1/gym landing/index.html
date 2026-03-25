@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GYM-Shark</title>
     <link rel="stylesheet" href="./src/style.css" />
+    <!--remix icon lib-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--nav-->
@@ -15,7 +23,6 @@
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
         <a href="#reviews">Reviews</a>
       </div>
     </nav>
@@ -100,14 +107,15 @@
       <h2>About US</h2>
       <section class="about" id="about">
         <p>
-          At <span>Gym Shark</span>, we believe that fitness is not just about lifting
-          weights or following routines — it’s about <span>building a mindset</span> that
-          refuses to quit. Every person who walks through our doors has a
-          different goal, a different story, and a different reason to start,
-          and <span>we are here </span> to support every step of that journey. Whether you are
-          taking your first step into the gym or pushing toward elite
-          performance, our mission is to give you the environment, guidance, and
-          motivation you need to grow. <br />
+          At <span>Gym Shark</span>, we believe that fitness is not just about
+          lifting weights or following routines — it’s about
+          <span>building a mindset</span> that refuses to quit. Every person who
+          walks through our doors has a different goal, a different story, and a
+          different reason to start, and <span>we are here </span> to support
+          every step of that journey. Whether you are taking your first step
+          into the gym or pushing toward elite performance, our mission is to
+          give you the environment, guidance, and motivation you need to grow.
+          <br />
           We have built a space that combines professional coaching, modern
           equipment, and a strong, supportive community. Our trainers are not
           just here to instruct, but to guide, correct, and push you when you
@@ -129,26 +137,80 @@
 
       <!--rates-->
       <h2>Clients Opinion</h2>
-      <section class="reviews" id="reviews" >
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
-        <div class="card"><img src="" alt=""></div>
+      <section class="reviews" id="reviews">
+        <div class="card">
+          <img src="./assets/man1.jpg" alt="card" />
+          <p>
+            <strong>Ahmed M.</strong> — I’ve trained in a lot of gyms before,
+            but this one is different. The coaches actually pay attention and
+            correct your form. I’ve seen real progress here in just a few
+            months.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/man2.webp" alt="card" />
+          <p>
+            <strong>Omar K.</strong> — What I like the most is the environment.
+            No ego, no pressure, just people focused on improving. The equipment
+            is always clean and available.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/man3.jpg" alt="card" />
+          <p>
+            <strong>Youssef A.</strong> — Started here as a beginner and
+            honestly had no idea what I was doing. The trainers helped me step
+            by step, and now I feel much more confident in my training.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/man4.jpg" alt="card" />
+          <p>
+            <strong>Mahmoud S.</strong> — If you're serious about getting
+            stronger and staying consistent, this is the place. Good coaching,
+            solid programs, and a motivating atmosphere.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/woman2.webp" alt="card" />
+          <p>
+            <strong>Sara H.</strong> — I really appreciate the female coaching
+            team. They are supportive, professional, and make you feel
+            comfortable no matter your level.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/woman4.webp" alt="card" />
+          <p>
+            <strong>Nour E.</strong> — The gym is very clean and well-organized.
+            I also like how there’s a space where women can train comfortably
+            with guidance when needed.
+          </p>
+        </div>
       </section>
       <!--end of rates-->
-
-      <!--contact-->
-      <section class="contact"></section>
-      <!--end of contact-->
     </main>
     <!--end of main-->
 
     <!--footer-->
     <footer>
+      <div class="left-section">
+        <h3>GYM-SHARK</h3>
+        <ul>
+          <li><i class="ri-facebook-fill"></i></li>
+          <li><i class="ri-instagram-fill"></i></li>
+          <li><i class="ri-twitter-fill"></i></li>
+          <li><i class="ri-whatsapp-fill"></i></li>
+        </ul>
+      </div>
+
+        <form action="#" method="POST" class="contact-form">
+            <h3>Leave your contact info and we will call you </h3>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Your Phone" />
+          <button type="submit">Send Message</button>
+        </form>
 
     </footer>
     <!--end of footer-->

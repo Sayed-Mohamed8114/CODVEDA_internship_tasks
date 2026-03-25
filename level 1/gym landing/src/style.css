@@ -56,7 +56,7 @@ span{
     transform: translateX(-50%);
     width: 70%;
     height: 60px;
-    background: var(--slate800); /* semi-transparent */
+    background: var(--slate600); /* semi-transparent */
     backdrop-filter: blur(10px);        /* blur content behind */
     -webkit-backdrop-filter: blur(10px);/* Safari support */
     display: flex;
@@ -90,7 +90,7 @@ span{
 }
 
 .navbar .nav-links a {
-    color: var(--slate300);
+    color: var(--slate900);
     font-weight: 900;
     font-size: larger;
     text-decoration: none;
@@ -142,7 +142,7 @@ main {
 }
 
 /* Hero Button with infinite animated border */
-.hero .hero-text button {
+button {
     position: relative;
     background: var(--slate900);
     padding: 15px 30px;
@@ -157,7 +157,7 @@ main {
     transition: background 0.3s ease;
 }
 
-.hero .hero-text button::before {
+ button::before {
     content: "";
     position: absolute;
     top: -2px;
@@ -171,7 +171,7 @@ main {
     animation: borderAnimation 3s linear infinite;
 }
 
-.hero .hero-text button:hover {
+button:hover {
     background: var(--slate600);
 }
 
@@ -207,7 +207,7 @@ main {
 
 .card{
     width: 100%;
-    background: var(--slate800);
+    background: var(--slate300);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,6 +227,7 @@ main {
 }
 
 .features .card p{
+    color: var(--slate800);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-align: center;
@@ -242,7 +243,7 @@ main {
     display: flex;
     align-items: center;
     background: var(--slate300);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 12px var(--slate400);
 
@@ -254,4 +255,117 @@ main {
     font-size: 25px;
     font-weight: 800;
 
+}
+
+
+.reviews{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    padding: 2%;
+    gap: 20px;  
+}
+
+
+.reviews .card img{
+    width: 100%;
+    height: 50%;
+    padding: 2%;
+
+}
+
+.reviews .card p{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: var(--slate900);
+}
+
+footer{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--slate400);
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+footer .left-section h3{
+    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--slate900);
+}
+
+footer .left-section ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer .left-section ul li{
+    list-style: none;
+    font-size: 30px;
+    color: var(--slate700);
+    cursor: pointer;
+    transition: color 0.5s ease, transform 0.5s ease;
+
+}
+
+footer .left-section ul li:hover{
+    color: var(--slate900);
+    transform: scale(1.1);
+
+}
+
+footer .contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+footer .contact-form h3{
+     font-weight: 900;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--slate900);   
+}
+
+footer .contact-form input{
+    padding: 2%;
+    border-radius: 20px;
+    background: var(--slate200);
+    color: var(--slate900);
+    width: 80%;
+    border: none;
+    text-align: start;
+}
+
+input::placeholder {
+    color: var(--slate900);
+}
+
+input:focus {
+    outline: none; 
+}
+
+footer .contact-form button{
+    width: 60%;
+    padding: 2%;
+    background-color: var(--slate900);
+    text-align: center;
 }
