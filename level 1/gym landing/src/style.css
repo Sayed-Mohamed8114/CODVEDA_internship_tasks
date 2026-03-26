@@ -364,17 +364,7 @@ footer .contact-form button {
 }
 
 
-/* ══════════════════════════════════════════════════════════════
-   MEDIA QUERIES
-   Breakpoints:
-     1200px  →  Large desktops / wide laptops
-      992px  →  Tablets landscape / small laptops
-      768px  →  Tablets portrait
-      576px  →  Large phones
-      400px  →  Small phones
-   ══════════════════════════════════════════════════════════════ */
 
-/* ─── Large desktops (≤ 1200px) ──────────────────────────────── */
 @media (max-width: 1200px) {
     .navbar {
         width: 85%;
@@ -394,7 +384,6 @@ footer .contact-form button {
     }
 }
 
-/* ─── Tablets landscape / small laptops (≤ 992px) ────────────── */
 @media (max-width: 992px) {
     h2 {
         font-size: 36px;
@@ -414,7 +403,6 @@ footer .contact-form button {
         font-size: 16px;
     }
 
-    /* Hero stacks vertically */
     .hero {
         flex-direction: column;
         height: auto;
@@ -436,7 +424,6 @@ footer .contact-form button {
         height: 50vh;
     }
 
-    /* 2-column grids */
     .features,
     .reviews {
         grid-template-columns: repeat(2, 1fr);
@@ -451,7 +438,6 @@ footer .contact-form button {
         font-size: 20px;
     }
 
-    /* Footer stacks */
     footer {
         flex-direction: column;
         height: auto;
@@ -478,7 +464,6 @@ footer .contact-form button {
     }
 }
 
-/* ─── Tablets portrait (≤ 768px) ─────────────────────────────── */
 @media (max-width: 768px) {
     h2 {
         font-size: 30px;
@@ -492,7 +477,6 @@ footer .contact-form button {
         margin-top: 100px;
     }
 
-    /* Navbar collapses label into icon-only feel */
     .navbar {
         width: 95%;
         height: 50px;
@@ -523,7 +507,6 @@ footer .contact-form button {
         padding: 12px 22px;
     }
 
-    /* Single column grids */
     .features,
     .reviews {
         grid-template-columns: 1fr;
@@ -562,7 +545,6 @@ footer .contact-form button {
     }
 }
 
-/* ─── Large phones (≤ 576px) ─────────────────────────────────── */
 @media (max-width: 576px) {
     h2 {
         font-size: 26px;
@@ -607,7 +589,6 @@ footer .contact-form button {
         font-size: 13px;
     }
 
-    /* Push main down more since navbar is taller now */
     main {
         margin-top: 140px;
     }
@@ -674,7 +655,7 @@ footer .contact-form button {
     }
 }
 
-/* ─── Small phones (≤ 400px) ─────────────────────────────────── */
+
 @media (max-width: 400px) {
     h2 {
         font-size: 22px;
