@@ -657,6 +657,9 @@ footer .contact-form button {
 
 
 @media (max-width: 400px) {
+    body{
+        overflow-x: hidden;
+    }
     h2 {
         font-size: 22px;
     }
