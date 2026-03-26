@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive form</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <form class="form">
+        <div class="form-group">
+          <label for="name" class="name">Name</label>
+          <input type="text" id="name" required />
+          <small class="error" id="nameErorr"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="email">E-mail</label>
+          <input type="email" id="email" required />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="tel" class="telephone">Phone-Number</label>
+          <input type="tel" id="telephone" required />
+          <small class="error" id="telephoneError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+          <small class="error" id="passwordError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" required />
+          <small class="error" id="confirmError"></small>
+        </div>
+      </form>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
