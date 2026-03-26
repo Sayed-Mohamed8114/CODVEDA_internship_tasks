@@ -7,39 +7,44 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div class="container" id="container">
       <form class="form">
+
+        <h1>Interactive Form</h1>
+
         <div class="form-group">
           <label for="name" class="name">Name</label>
           <input type="text" id="name" required />
-          <small class="error" id="nameErorr"></small>
+          <small class="error" id="nameErorr">hello</small>
         </div>
 
         <div class="form-group">
           <label for="email" class="email">E-mail</label>
           <input type="email" id="email" required />
-          <small class="error" id="emailError"></small>
+          <small class="error" id="emailError">hello</small>
         </div>
 
         <div class="form-group">
           <label for="tel" class="telephone">Phone-Number</label>
           <input type="tel" id="telephone" required />
-          <small class="error" id="telephoneError"></small>
+          <small class="error" id="telephoneError">hello</small>
         </div>
 
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" required />
-          <small class="error" id="passwordError"></small>
+          <small class="error" id="passwordError">hello</small>
         </div>
 
         <div class="form-group">
           <label for="confirmPassword">Confirm Password</label>
           <input type="password" id="confirmPassword" required />
-          <small class="error" id="confirmError"></small>
+          <small class="error" id="confirmError">hello</small>
         </div>
+
+        <button>submit</button>
+        <p class="success" id="successMessage">every thing is goood </p>
+
       </form>
-    </div>
     <script src="./src/script.js"></script>
   </body>
 </html>
